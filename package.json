@@ -1,0 +1,20 @@
+{
+  "name": "graphql-modifier",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w --noEmit --incremental",
+    "dev:g": "nodemon -e ts --exec \"node -r tsm --enable-source-maps\" index.ts"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "tsm": "^2.2.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "apollo-server": "^3.5.0",
+    "graphql": "^16.2.0",
+    "nexus": "^1.2.0-next.17"
+  }
+}
