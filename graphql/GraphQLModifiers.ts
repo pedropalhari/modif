@@ -1,5 +1,6 @@
 import { arg, extendType, nonNull, objectType, stringArg } from "nexus";
 import { ArgsRecord, Maybe } from "nexus/dist/core";
+import { AddressModifiers } from "../modifiers/AddressModifiers";
 import { CaseModifiers } from "../modifiers/CaseModifiers";
 import { DateModifiers } from "../modifiers/DateModifiers";
 import { RegexModifiers } from "../modifiers/RegexModifiers";
@@ -23,6 +24,7 @@ const ALL_MODIFIERS = {
   ...CaseModifiers,
   ...RegexModifiers,
   ...StringModifiers,
+  ...AddressModifiers,
 };
 
 const ModifierObject = objectType({
@@ -50,9 +52,9 @@ const ModifierObject = objectType({
       t.field(modifierOperationName, {
         type: "ModifierObject",
         args,
-        resolve: (root, args) => ({
+        resolve: async (root, args) => ({
           //@ts-ignore
-          value: modifier(root.value, ...Object.values(args)),
+          value: await modifier(root.value, ...Object.values(args)),
         }),
       });
     });
