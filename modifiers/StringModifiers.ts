@@ -24,4 +24,8 @@ export const StringModifiers = {
   starts,
   ends,
   between,
+
+  // JavasScript default functions
+  encodeURIComponent,
+  decodeURIComponent,
 };
