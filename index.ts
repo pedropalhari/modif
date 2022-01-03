@@ -11,7 +11,7 @@ async function run() {
 
   const { url } = await server.listen(6780);
 
-  console.log(`Server listening at ${url}`);
+  console.log(`🚀 Server listening at ${url} 🚀`);
 }
 
 run();

@@ -109,3 +109,14 @@ Have a great idea or want to add more modifiers to it? Check out `modifiers/Stri
 - `yarn`
 - Either `node pm2.js` or `yarn dev:g`
   - The latter is prefered as it has `nodemon` and `--enable-source-maps` capabilities.
+  - A server will spawn under `http://localhost:6780`, navigate to it to query the API
+
+## Early FAQ
+
+- Hey, why don't you use `X` instead of Apollo Studio Sandbox?
+
+I like the Sandbox. It's visually great, let me do a lot of work visually.
+
+- Why can't I do `Y`?
+
+Very _very_ early stage toy. But check [Contributing](#contributing) up above and make yourself at home.
