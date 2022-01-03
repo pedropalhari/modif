@@ -1,5 +1,7 @@
-# This project is a WIP
+# **modif** (🍖👉🥪)
 
-And I'll be adding more info here.
+`modif` is a small GraphQL API with transform capabilities. It takes a `string` input and outputs a `string`. Always.
 
-For now, you may want to check `graphql/GraphQLModifiers.ts` and a simple modifier like `modifiers/CaseModifiers.ts`.
+# TL;DR
+
+- Go play with it at https://modif.palhari.dev

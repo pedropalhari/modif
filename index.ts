@@ -9,7 +9,7 @@ async function run() {
     schema,
   });
 
-  const { url } = await server.listen(4000);
+  const { url } = await server.listen(6780);
 
   console.log(`Server listening at ${url}`);
 }
