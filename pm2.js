@@ -1,0 +1,2 @@
+require("tsm");
+require("./index");
