@@ -12,8 +12,8 @@ Some cool examples to start you by:
 
 - [Uppercase a string](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fmodif.palhari.dev%2F&explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAKoAOZ%2BUAhgM4IDKKeAlkgOYAUAJAG7UAbXOiJNWHAIQBKIsAA6SIkTgQwLAGYFO-IQhF9BuGfMVKiMClToJZCs2Z247ZgL7O3SFyAA0Ifq2oAIwEEWgwQEyU5P0MEaJFolgByOCJqIgEIAHcreiJaZjZ2aIUvFyA)
 
-```data
-// Operation
+```graphql
+# Operation
 query UppercaseString($value: String!) {
   modify(value: $value) {
     uppercase {
@@ -22,7 +22,7 @@ query UppercaseString($value: String!) {
   }
 }
 
-// Variables
+# Variables
 {
   "value": "i'm a lowercase string"
 }
@@ -31,7 +31,7 @@ query UppercaseString($value: String!) {
 - [Get the domain of a properly positioned email address](https://studio.apollographql.com/sandbox/explorer?endpoint=https%3A%2F%2Fmodif.palhari.dev%2F&explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAOIIoCicAhgJYA2AgmGHggM7sAiENtSACgA6SIkQAkAN2r1c6IgGUUefgHMAhCLHjqeVQEZ5SlUg1aJUCEijUUjPYcXK1mpAEoiwc3AhhaAMwIBaVkEeSkZXA8vUTEidhRdFHYBXQNwtP1o8ziiNh9JBAB1AAtaFAQFAAdqKARPHNyiS2tbVIdwlps7B2zYpriQ3EbcgF8RonH%2ByfMpqZAAGhBpFWoAI3oODBAYsSFlyIR9%2BX2AWWIEPnoiahY2TiJadiIqhFYIAAEa%2BhLdWgA6MAIST7BbmfaZY5EfYfUHgkBdWz2AxQ-aPZ4oEr1S50a63VgcdgAciIkD4SH2IlGIFGQA)
 
 ```graphql
-// Operation
+# Operation
 query GetEmailAddressDomain(
   $value: String!
   $arg1: String!
@@ -48,7 +48,7 @@ query GetEmailAddressDomain(
   }
 }
 
-// Variables
+# Variables
 {
   "value": "My email address is pedro@palhari.dev",
   "arg1": "@",
@@ -60,7 +60,7 @@ query GetEmailAddressDomain(
   - Using https://viacep.com.br/
 
 ```graphql
-// Operation
+# Operation
 query GetStreetNameFromCEP(
   $value: String!
   $arg1: String!
@@ -80,7 +80,7 @@ query GetStreetNameFromCEP(
   }
 }
 
-// Variables
+# Variables
 {
   "value": "My house is located at 15370-496",
   "arg1": "logradouro:",
