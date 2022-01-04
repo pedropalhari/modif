@@ -89,7 +89,7 @@ query GetStreetNameFromCEP(
 }
 ```
 
-## How does it work
+## How does it work?
 
 Using GraphQL attribute resolving as a runtime recursive transformer of the input. The GraphQL server is made of a single Object called `ModifierObject`.
 
